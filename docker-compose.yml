@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: my-react-app
+    ports:
+      - "3050:3000"  # Map host port 3050 to container port 3000
+    restart: unless-stopped
+    # If you need environment variables, uncomment and add them here
+    # environment:
+    #   - NODE_ENV=production
+    #   - REACT_APP_API_URL=http://api-server:8080

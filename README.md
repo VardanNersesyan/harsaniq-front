@@ -2,6 +2,32 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Docker Setup
+
+This application can be run using Docker and Docker Compose.
+
+### Prerequisites
+
+- Docker
+- Docker Compose
+
+### Running with Docker Compose
+
+1. Build and start the container:
+   ```
+   docker-compose up -d
+   ```
+
+2. Access the application at:
+   ```
+   http://localhost:3050
+   ```
+
+3. Stop the container:
+   ```
+   docker-compose down
+   ```
+
 ## Available Scripts
 
 In the project directory, you can run:
